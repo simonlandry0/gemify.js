@@ -130,7 +130,7 @@ function GrindIntoGooNoMess( appid, contextid, itemid )
 		};
 
 		var getGooParams =  get_goo_params(appid, contextid, itemid);
-		var strActionURL = "http://steamcommunity.com/auction/ajaxgetgoovalueforitemtype/";
+		var strActionURL = "https://steamcommunity.com/auction/ajaxgetgoovalueforitemtype/";
 
 		$J.get( strActionURL, getGooParams).done( function( data ) {
 			var $Content = $J(data.strHTML);
